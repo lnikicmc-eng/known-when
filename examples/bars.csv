@@ -1,0 +1,3 @@
+symbol,bar_start,available_at,provider,price_basis,open,high,low,close,volume,trade_count,vwap
+SYNTH,2020-01-02T14:30:00Z,2020-01-02T14:31:01Z,demo,raw_nominal,100,101,99,100,1000,20,100
+SYNTH,2020-01-02T14:30:00Z,2020-01-02T14:31:30Z,demo,raw_nominal,100,102,99,102,1000,20,100

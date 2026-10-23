@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "known-when"
+version = "0.1.0a1"
+description = "Point-in-time news and completed-candle snapshots with explicit availability evidence"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2,<3"]
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.7,<1"]
+
+[project.scripts]
+known-when = "knownwhen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

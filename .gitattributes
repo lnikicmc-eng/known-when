@@ -1,0 +1,3 @@
+# These fixtures have exact-byte integrity hashes on every platform.
+examples/*.jsonl -text
+examples/*.csv -text
